@@ -1,4 +1,6 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p> -->
+
+<h1>Sensitive Information!</h1>
 
 <p>
   <strong>Email:</strong>
@@ -7,8 +9,11 @@
 
 <p>
 	<strong>Credit Card Info:</strong>
-	<p>1927589324737</p>
+	<%= rand(16 ** 16) %>
 </p>
+
+<img src="http://s2.quickmeme.com/img/d8/d8d9759d79f476d9249a1ec44a2d1436dd5a124c882464e2e36c07b94997499d.jpg">
+
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
